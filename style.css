@@ -29,7 +29,7 @@ body {
   
   .overlay.hidden {
     opacity: 0;
-    transform: translateY(20px); /* Moves up when hidden */
+    transform: translateY(150px);
     pointer-events: none;
   }
   
@@ -73,8 +73,7 @@ body {
 #buttons {
     display: flex;
     justify-content: flex-end;
-    width: 90%;
-    max-width: 900px;
+    width: 900px;
     padding-right: 225px;
 }
 
@@ -137,6 +136,5 @@ button.invisible {
 
 #dialogue {
     align-items: center;
-    width: 90%;
-    max-width: 900px;
+    width: 900px;
 }
