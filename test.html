@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Toggle</title>
+  <style>
+    img {
+      width: 300px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <img id="image" src="image1.jpg" alt="Image">
+  <br>
+  <button onclick="changeImage()">Change Image</button>
+
+  <script>
+    const imageElement = document.getElementById('image');
+    let isImageOne = true;
+
+    function changeImage() {
+      imageElement.src = isImageOne ? 'image2.jpg' : 'image1.jpg';
+      isImageOne = !isImageOne;
+    }
+  </script>
+
+</body>
+</html>

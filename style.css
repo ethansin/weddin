@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'KirbyFont';
+    src: url('assets/fonts/SeuratPro-UB-AlphaNum.woff2') format('woff2'),
+        url('assets/fonts/SeuratPro-UB-AlphaNum.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff4c7;
+    overflow: hidden;
+    position: relative;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+  
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .overlay.hidden {
+    opacity: 0;
+    transform: translateY(20px); /* Moves up when hidden */
+    pointer-events: none;
+  }
+  
+  .overlay img {
+    width: auto;
+    max-height: 80%;
+  }
+  
+  .toggle-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10000;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+
+.toggle-button img {
+    height: 24px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+  
+.music-button {
+    position: fixed;
+    bottom: 60px; /* above the overlay toggle button */
+    right: 20px;
+    z-index: 10000;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+
+#buttons {
+    display: flex;
+    justify-content: flex-end;
+    width: 900px;
+    padding-right: 225px;
+}
+
+#buttons button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 11px;
+    cursor: pointer;
+  }
+
+#buttons button img {
+    height: 24px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* #buttons button:hover img {
+    transform: scale(1.05);
+}
+
+#buttons button:active img {
+    transform: scale(0.9);
+}
+
+#buttons button.active img {
+    transform: scale(0.9);
+}
+
+#buttons button.invisible {
+    opacity: 0.2;
+    pointer-events: none;
+  } */
+
+button:hover img {
+    transform: scale(1.05);
+}
+
+button:active img {
+    transform: scale(0.9);
+}
+
+button.active img {
+    transform: scale(0.9);
+}
+
+button.invisible {
+    opacity: 0.2;
+    pointer-events: none;
+  }
+
+#gifs {
+    display: flex;
+    align-items: center;
+}
+
+#gifs img:hover {
+    transition: transform 0.1s ease;
+    transform: scale(0.95);
+}
+
+#dialogue {
+    align-items: center;
+    width: 900px;
+}

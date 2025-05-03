@@ -1,0 +1,9 @@
+@font-face {
+    font-family: '';
+    src: url('SeuratPro-UB-AlphaNum.woff2') format('woff2'),
+        url('SeuratPro-UB-AlphaNum.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

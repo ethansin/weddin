@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Save the Date</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+        <link id="favicon" rel="icon" type="gif" href="assets/amanda_sprite.gif">
+</head>
+<body>
+    <audio id="backgroundMusic" preload="auto" loop>
+        <source src="assets/8bit.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+      
+    <div class="overlay hidden" id="overlay">
+        <img src="assets\save-the-date-flyer.png" alt="Overlay Image">
+    </div>
+      
+    <div id="gifs">
+        <img src="assets/amanda_sprite.gif" width="300px" onclick="amandaFavicon()">
+        <img src="assets/ethan_sprite.gif" width="300px" onclick="ethanFavicon()">
+    </div>
+    <div id="dialogue">
+        <img id="box" width="900px">
+    </div>
+    <div id="buttons">
+        <button onclick="previousImage()">
+            <img src="assets\back.png" alt="Back">
+        </button>
+        <button onclick="nextImage()">
+            <img src="assets\next.png" alt="Next">
+        </button>
+    </div>
+    <button class="toggle-button" onclick="toggleOverlay()">
+        <img id="toggleImage" src="assets/show-flyer-button.png" alt="Show Flyer">
+    </button>
+    <script src="save-the-date.js"></script>
+</body>
