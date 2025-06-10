@@ -5,12 +5,28 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div class="background-overlay"></div>
-    <div id="gifs">
-        <img src="assets\amanda_sprite.gif" width="300px">
-        <img src="assets\ethan_sprite.gif" width="300px">
+    <div class="title">
+        <img class="icon amanda" src="assets/amanda_sprite.gif">
+        <picture class="banner-text">
+            <source media="(max-width: 700px)" srcset="assets/home/weddinghome-title-kirby-stack.png">
+            <source media="(min-width: 701px)" srcset="assets/home/weddinghome-title-kirby.png">
+            <img src="assets/home/weddinghome-title-kirby.png">
+        </picture>
+        <img class="icon ethan" src="assets/ethan_sprite.gif">
     </div>
-    <div id="dialogue">
-        <img src="assets/amanda-dialogue.png" width="900px">
+    <div class="menu">
+        <img class="title2" src="assets/home/menu-title.png" height="80px">
+        <button>
+            <img src="assets/home/info-button.png" height="50px">
+        </button>
+        <button>
+            <img src="assets/home/rsvp-button.png" height="50px">
+        </button>
+        <button>
+            <img src="assets/home/history-button.png" height="50px">
+        </button>
+        <button class="registry">
+            <img src="assets/home/registry-button.png" height="50px">
+        </button>
     </div>
 </body>
