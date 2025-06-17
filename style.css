@@ -247,6 +247,10 @@ body {
     max-width: 95%;
 }
 
+.info a:link, a:visited {
+    color: inherit;
+}
+
 @media (max-width: 700px) {
     body {
         padding-top: 3dvh;
