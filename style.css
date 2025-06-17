@@ -17,9 +17,16 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 8dvh;
-    padding-bottom: 50px;
+    padding: 100px;
+    /* padding-bottom: 50px; */
     /* border-radius: 20px; */
+    color: white;
+    font-family: "Shantell Sans", cursive;
+    font-weight: 250;
+    font-style: normal;
+    font-size: xx-large;
+    text-shadow: 1px 2px 0 #221934;
+    letter-spacing: 2px;
 }
 
 .title {
@@ -40,6 +47,10 @@ body {
     width: 30%;
 }
 
+.info-title {
+    width: 25%;
+}
+
 .banner-text img {
     width: 100%;
 }
@@ -50,6 +61,10 @@ body {
 
 .history-icon {
     width: 8%;
+}
+
+.info-icon {
+    width: 10%;
 }
 
 .menu {
@@ -63,7 +78,7 @@ body {
 }
 
 .title2 {
-    height: 10%;
+    height: 13%;
 }
 
 .menu a {
@@ -96,7 +111,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 30px;
+    padding: min(50px, 8%);
     background-color: #221934;
     border-radius: 20px;
 }
@@ -110,7 +125,7 @@ body {
 }
 
 .imagestack img {
-    width: 100%;
+    width: 98%;
     /* height: auto;
     aspect-ratio: 4 / 3;
     object-fit: contain; */
@@ -123,10 +138,11 @@ body {
     margin-bottom: auto;
     color: white;
     /* text-align: justify; */
-    font-family: "Darumadrop One", sans-serif;
-    font-weight: 400;
+    font-family: "Shantell Sans", cursive;
+    font-weight: 250;
     font-style: normal;
     font-size: x-large;
+    letter-spacing: 2px;
     text-shadow: 1px 2px 0 #221934;
 }
 
@@ -211,17 +227,44 @@ body {
     transform: scale(0.9);
 }
 
+.info {
+    padding: min(50px, 8%);
+    background-color: #221934;
+    border-radius: 20px;
+    width: min(900px, 90%);
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    font-family: "Shantell Sans", cursive;
+    font-weight: 250;
+    font-style: normal;
+    font-size: xx-large;
+    text-shadow: 1px 2px 0 #221934;
+    letter-spacing: 2px;
+}
+
+.info img {
+    max-width: 95%;
+}
+
 @media (max-width: 700px) {
     body {
         padding-top: 3dvh;
         padding-left: 0;
         padding-right: 0;
     }
+    .container {
+        padding: 4%;
+        padding-bottom: 60px;
+    }
     .amanda {order: 1;}
     .ethan {order: 2;}
     .banner-text {
         order: 3;
-        width: 100%;
+        width: 90%;
+    }
+    .info-title {
+        width: 65%;
     }
     .icon {
         width: 40%;
