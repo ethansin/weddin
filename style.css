@@ -25,7 +25,7 @@ body {
     font-weight: 250;
     font-style: normal;
     font-size: xx-large;
-    text-shadow: 1px 2px 0 #221934;
+    text-shadow: 2px 2px 0 #221934;
     letter-spacing: 2px;
 }
 
@@ -114,6 +114,8 @@ body {
     padding: min(50px, 8%);
     background-color: #221934;
     border-radius: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .alt {
@@ -138,8 +140,8 @@ body {
     margin-bottom: auto;
     color: white;
     /* text-align: justify; */
-    font-family: "Shantell Sans", cursive;
-    font-weight: 250;
+    font-family: "Shantell Sans", sans-serif;
+    font-weight: 350;
     font-style: normal;
     font-size: x-large;
     letter-spacing: 2px;
@@ -229,18 +231,83 @@ body {
 
 .info {
     padding: min(50px, 8%);
+    padding-top: 15px;
+    padding-bottom: 15px;
     background-color: #221934;
     border-radius: 20px;
-    width: min(900px, 90%);
-    margin-top: auto;
-    margin-bottom: auto;
+    width: min(900px, 80%);
+    margin-top: 15px;
+    margin-bottom: 15px;
     color: white;
     font-family: "Shantell Sans", cursive;
-    font-weight: 250;
+    font-weight: 300;
     font-style: normal;
     font-size: xx-large;
     text-shadow: 1px 2px 0 #221934;
     letter-spacing: 2px;
+}
+
+.info b {
+    font-weight: 500;
+}
+
+.info-chunk {
+    padding: min(50px, 8%);
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-shadow: none;
+}
+
+.party-profile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: min(50px, 8%);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-shadow: none;
+}
+
+.wedding-party-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.wedding-party-image img {
+    width: 80%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.wedding-party-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+}
+
+.party-profile h5 {
+    color: black;
+    text-align: center;
+    margin: 0;
+}
+
+.party-profile p {
+    color: black;
+    margin: 0;
 }
 
 .info img {
@@ -270,7 +337,16 @@ body {
     .info-title {
         width: 65%;
     }
+    .info {
+        font-size: x-large;
+    }
     .icon {
         width: 40%;
+    }
+    .wedding-party-description {
+        width: 100%;
+    }
+    .wedding-party-image {
+        width: 100%;
     }
 }

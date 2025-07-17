@@ -6,9 +6,14 @@
         <link id="favicon" rel="icon" type="gif" href="assets/amanda_sprite.gif">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cherry+Swash:wght@400;700&family=Darumadrop+One&family=Kalam:wght@300;400;700&family=Nanum+Pen+Script&family=Oldenburg&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cherry+Swash:wght@400;700&family=Darumadrop+One&family=Kalam:wght@300;400;700&family=Nanum+Pen+Script&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oldenburg&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <audio id="backgroundMusic" preload="auto" loop>
+        <source src="assets/kristofferson.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
     <a href="index.html" class="back-button">
         <div>
             back to home
@@ -31,12 +36,12 @@
                     Amanda and Ethan both attended UC Davis starting 2017 and each ended up attending Asian American Christian Fellowship (AACF). In group study sessions, Amanda was hard at work. Because of this, she initially was not a fan of Ethan who just played video games and doodled instead (you can ask Amanda about this time). Through AACF and a class they accidentally took together, they ended up getting to know each other better and became good friends. They both started to realize they enjoyed each other's company near the end of freshman year and decided to start dating in sophomore year (on NOVEMBER 8!!! does that sound FAMILIAR TO YOU??). 
                 </div>
             </div>
-			<div class="arrow-block">
+			<!-- <div class="arrow-block">
 				<a class="arrow-icon">
   					<span class="left-bar"></span>
   					<span class="right-bar"></span>
 				</a>
-			</div>
+			</div> -->
             <div class="history-item alt">
                 <div class="imagestack">
                     <img src="assets/history/jollibee.jpg">
@@ -45,12 +50,12 @@
                     In the rest of their undergrad years, they enjoyed living on the same street, watching cartoons, playing games, eating a lot (a LOT) of food, and hanging out with their beloved friends together. They also had a pandemic together. 
                 </div>
             </div>
-			<div class="arrow-block">
+			<!-- <div class="arrow-block">
 				<a class="arrow-icon">
   					<span class="left-bar"></span>
   					<span class="right-bar"></span>
 				</a>
-			</div>
+			</div> -->
             <div class="history-item">
                 <div class="imagestack">
                     <img src="assets/history/family-tile.png">
@@ -59,12 +64,12 @@
                     When they graduated from UC Davis, Ethan moved back to Daly City to drive more buses and Amanda stayed in Davis to look at eyeballs (at an optometry). They visited each other at least once a month, and visited Daly City/Laguna Niguel to get to know each other’s families more, and grew into this new post-grad stage of life together. 
                 </div>
             </div>
-			<div class="arrow-block">
+			<!-- <div class="arrow-block">
 				<a class="arrow-icon">
   					<span class="left-bar"></span>
   					<span class="right-bar"></span>
 				</a>
-			</div>
+			</div> -->
             <div class="history-item alt">
                 <div class="imagestack">
                     <img src="assets/history/engagement.jpg">
@@ -75,4 +80,22 @@
             </div>
         </div>
     </div>
+    <script>
+        const music = document.getElementById('backgroundMusic');
+        let musicStarted = false;
+
+        music.volume = 0.1;
+
+        function startMusicOnce() {
+        if (!musicStarted) {
+            music.play().catch(e => {
+            console.warn("Music playback failed:", e);
+            });
+            musicStarted = true;
+            document.removeEventListener('click', startMusicOnce);
+        }
+        }
+
+        document.addEventListener('click', startMusicOnce);
+    </script>
 </body>

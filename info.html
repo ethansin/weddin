@@ -6,9 +6,14 @@
         <link id="favicon" rel="icon" type="gif" href="assets/ethan_sprite.gif">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cherry+Swash:wght@400;700&family=Darumadrop+One&family=Kalam:wght@300;400;700&family=Nanum+Pen+Script&family=Oldenburg&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cherry+Swash:wght@400;700&family=Darumadrop+One&family=Kalam:wght@300;400;700&family=Nanum+Pen+Script&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oldenburg&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <audio id="backgroundMusic" preload="auto" loop>
+        <source src="assets/jimmysquirrel.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
     <a href="index.html" class="back-button">
         <div>
             back to home
@@ -24,22 +29,33 @@
         </div>
         <div class="info">
             <h1>
-                Wedding Day
+                The Wedding Day
             </h1>
             <p>
-                Location: Newport Beach Civic Center Community Room and Lawn
+                <b>Location:</b> Newport Beach Civic Center Community Room and Lawn
             </p>
             <p>
-                Date: Saturday, November 8th, 2025
+                <b>Date & Time:</b> Saturday, November 8th, 2025
             </p>
+            <div class="info-chunk">
+                <p>
+                    <b>10:00am</b> - Doors Open
+                </p>
+                <p>
+                    <b>10:30am</b> - Ceremony Begins
+                </p>
+                <p>
+                    <b>11:10am</b> - Cocktail & Coffee Hour/Photo Calls
+                </p>
+                <p>
+                    <b>12:15pm</b> - Reception
+                </p>
+                <p>
+                    <b>3:00pm</b> - Farewells
+                </p>
+            </div>
             <p>
-                Ceremony Begins: 10:30am
-            </p>
-            <p>
-                Reception Begins: 12:30pm
-            </p>
-            <p>
-                Attire: Semi-formal, please note only the wedding party will be wearing burgundy
+                <b>Attire:</b> Cocktail attire; Please avoid burgundy and any white!
             </p>
             <a href="save-the-date.html" target="_blank">
                 <p>
@@ -47,7 +63,181 @@
                 </p>
             </a>
         </div>
+        <div class="info">
+            <h1>
+                FAQs
+            </h1>
+            <p>
+                <b>Q:</b> What's the weather like?
+            </p>
+            <p>
+                <b>A:</b> Generally Newport Beach will be between 60 and 70 degrees in November. There is a chance there will be light winds.
+            </p>
+            <p>
+                <b>Q:</b> Is there parking?
+            </p>
+            <p>
+                <b>A:</b> There is a large free parking structure at the venue and a loading zone right in front of the reception area.
+            </p>
+            <p>
+                <b>Q:</b> Will there be alcohol?
+            </p>
+            <p>
+                <b>A:</b> There will not be alcohol at the venue. Please refrain from bringing your own alcohol!
+            </p>
+            <p>
+                <b>Q:</b> Will we be indoors or outdoors?
+            </p>
+            <p>
+                <b>A:</b> The ceremony will be outdoors on the lawn, the cocktail and coffee hour will be outdoors by the community room, and the reception will be indoors.
+            </p>
+            <p>
+                <b>Q:</b> Do I have a plus one?
+            </p>
+            <p>
+                <b>A:</b> The RSVP email you received should list everyone who is invited. Unfortunately, due to spatial limitations we cannot take plus ones.
+            </p>
+            <p>
+                If you have any other questions, please email us at amanda.ethan.25@gmail.com
+            </p>
+        </div>
+        <div class="info">
+            <h1>
+                The Wedding Party
+            </h1>
+            <div class="party-profile">
+                <div class="wedding-party-image">
+                    <img src="assets/info/party/caleb.jpeg">
+                    <h5>Caleb Sin</h5>
+                </div>
+                <div class="wedding-party-description">
+                    <p>Brother of the groom. Big muscles and a bigger heart. Psychology PhD with low level psychic powers (not psychokinetic).</p>
+                </div>
+            </div>
+            <div class="party-profile">
+                <div class="wedding-party-image">
+                    <img src="assets/info/party/kayleen.jfif">
+                    <h5>Kayleen Robinett</h5>
+                </div>
+                <div class="wedding-party-description">
+                    <p>OC/home church bestie since 2nd/3rd grade. Will beat you in basketball. Living that Aloha life in Oahu. High school plans to try to be related by marriage are not panning out but always sisters in Christ. A very supportive friend.</p>
+                </div>
+            </div>
+            <div class="party-profile">
+                <div class="wedding-party-image">
+                    <img src="assets/info/party/mandy.jfif">
+                    <h5>Mandy Lei</h5>
+                </div>
+                <div class="wedding-party-description">
+                    <p>AACF bestie. PT student. Lover of God, stickers, and books. Runs faster than Lighting McQueen kachow. Only a little taller (tragic). A very encouraging friend.</p>
+                </div>
+            </div>
+            <div class="party-profile">
+                <div class="wedding-party-image">
+                    <img src="assets/info/party/maryann.jfif">
+                    <h5>Mary-Ann Chen</h5>
+                </div>
+                <div class="wedding-party-description">
+                    <p>AACF bestie. Food Science Master's graduate. Makes+shares tasty pies. Tries questionable but intriguing alternative meat products from Grocery Outlet. Great listener+advice giver, whether about church or which cheese tastes good. A very empathetic friend.</p>
+                </div>
+            </div>
+            <div class="party-profile">
+                <div class="wedding-party-image">
+                    <img src="assets/info/party/justin.jpg">
+                    <h5>Justin Fan</h5>
+                </div>
+                <div class="wedding-party-description">
+                    <p>Cousin of the groom. 2nd best Omelet player. Vibe master, available for consulting. Maybe the actual Red Deutschland Ampelmann.</p>
+                </div>
+            </div>
+            <div class="party-profile">
+                <div class="wedding-party-image">
+                    <img src="assets/info/party/sarah.jfif">
+                    <h5>Sarah Chen</h5>
+                </div>
+                <div class="wedding-party-description">
+                    <p>AACF bestie. Hidden Valley Ranch developer. Loves to identify and look at flowers. Will share a bible verse or Breathe of the Wild meme. A very compassionate friend.</p>
+                </div>
+            </div>
+            <div class="party-profile">
+                <div class="wedding-party-image">
+                    <img src="assets/info/party/sambat.jpg">
+                    <h5>Sambat Lim</h5>
+                </div>
+                <div class="wedding-party-description">
+                    <p>Ambassador of Cambodia. Enjoyer of things - cinema, steaks, games, the gym, F1, cats, and more. Storytelling extraordinaire, get him talking around a campfire.</p>
+                </div>
+            </div>
+            <div class="party-profile">
+                <div class="wedding-party-image">
+                    <img src="assets/info/party/bonnie.jpg">
+                    <h5>Bonnie Chu</h5>
+                </div>
+                <div class="wedding-party-description">
+                    <p>AACF bestie. Enjoys her cat Rona's cuddles. Can ask a spiritual question that leads to deep 3 hour conversation(s). Shares informative therapy facts. A very intentional friend.</p>
+                </div>
+            </div>
+            <div class="party-profile">
+                <div class="wedding-party-image">
+                    <img src="assets/info/party/ian.jpeg">
+                    <h5>Ian Kwan</h5>
+                </div>
+                <div class="wedding-party-description">
+                    <p>1/4 Japanese, 3/4 something else. Wants to look like Garou the Human Monster. The Thing Knower. He knows things. Almost fluent in Vietnamese. Gone fishin'.</p>
+                </div>
+            </div>
+            <div class="party-profile">
+                <div class="wedding-party-image">
+                    <img src="assets/info/party/albert.jpeg">
+                    <h5>Albert Liu</h5>
+                </div>
+                <div class="wedding-party-description">
+                    <p>Ethan's boy next door. Went to school with the groom from 4th through 16th grade. Always down to clown (as in, go out to spend money on food). Asian guy aesthetic poster boy.</p>
+                </div>
+            </div>
+        </div>
+        <div class="info">
+            <h1>
+                Things to do
+            </h1>
+            <p>
+                <a href="https://www.fashionisland.com/">Fashion Island</a> - A big ole mall.
+            </p>
+            <p>
+                <a href="https://doryfleet.com/market/">Dory Fleet Fish Market</a> - Early morning fish market with fresh catches!
+            </p>
+            <p>
+                <a href="https://www.stereoscopecoffee.com/">Stereoscope Coffee</a> - Really yum coffee (and other milky drinks). At the Newport Beach location, park in the structure and the employees can validate your parking for 2 hours.
+            </p>
+            <p>
+                <a href="https://doryfleet.com/market/">Kawamata Seafood</a> - Very delicious poke.
+            </p>
+            <p>
+                <a href="https://maps.app.goo.gl/9RVpANxgvfRVN9vD6">Zankou Chicken</a> - Chicken with really good toum (Lebanese garlic spread).
+            </p>
+            <p>
+                <a href="https://pampasheladosargentinos.com/">Pampas Helados</a> - Argentinian gelato, claimed to be better than Italian gelato by another customer (it is quite good).
+            </p>
+        </div>
     </div>
+    <script>
+        const music = document.getElementById('backgroundMusic');
+        let musicStarted = false;
+
+        music.volume = 0.1;
+
+        function startMusicOnce() {
+        if (!musicStarted) {
+            music.play().catch(e => {
+            console.warn("Music playback failed:", e);
+            });
+            musicStarted = true;
+            document.removeEventListener('click', startMusicOnce);
+        }
+        }
+
+        document.addEventListener('click', startMusicOnce);
+    </script>
 </body>
 
 <!--
