@@ -236,8 +236,8 @@ body {
 
 .info {
     padding: min(50px, 8%);
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: #221934;
     border-radius: 20px;
     width: min(900px, 80%);
@@ -321,6 +321,17 @@ body {
 
 .info a:link, a:visited {
     color: inherit;
+}
+
+.zelle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zelle img {
+    border-radius: 20px;
+    width: min(500px, 90%);
 }
 
 @media (max-width: 700px) {
