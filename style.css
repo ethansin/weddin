@@ -334,7 +334,7 @@ body {
     width: min(500px, 90%);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     body {
         padding-top: 3dvh;
         padding-left: 0;
